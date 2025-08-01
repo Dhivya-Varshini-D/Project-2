@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page Demo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    nav {
+      background: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav h2 {
+      color: #1a73e8;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #1a73e8;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      background-color: #e8f0fe;
+    }
+
+    .hero-text {
+      flex: 1;
+      padding: 20px;
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero-text button {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hero-img {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .hero-img img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .features {
+      padding: 60px 20px;
+      background-color: white;
+      text-align: center;
+    }
+
+    .features h2 {
+      margin-bottom: 40px;
+    }
+
+    .feature-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+
+    .feature {
+      background: #f1f3f4;
+      padding: 30px;
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #1a73e8;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .feature-boxes {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h2>MyLanding</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Welcome to My Landing Page</h1>
+    <p>Clean, modern, and user-friendly interface</p>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Grow Your Online Presence</h1>
+      <p>We help you build powerful and responsive websites to reach your audience effectively.</p>
+      <button onclick="alert('Thanks for clicking!')">Get Started</button>
+    </div>
+    <div class="hero-img">
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Our Features</h2>
+    <div class="feature-boxes">
+      <div class="feature">
+        <h3>Responsive Design</h3>
+        <p>Perfect on all devices with flexible layouts.</p>
+      </div>
+      <div class="feature">
+        <h3>Easy to Customize</h3>
+        <p>Edit with just HTML & CSS. No hassle!</p>
+      </div>
+      <div class="feature">
+        <h3>Fast Loading</h3>
+        <p>Optimized for performance and speed.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MyLanding. Designed with 💙</p>
+  </footer>
+
+</body>
+</html>
